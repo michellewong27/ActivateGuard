@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: "contact", component: ContactusComponent},
   {path: "login", component: LoginComponent},
   {path: "signout", component: SignoutComponent},
-  //using AuthGuard
+  //using AuthGuard so ng g guard auth (creating auth.guard file)
   {path:"admin", canActivate: [AuthGuard], component: AdminComponent}
 ];
 
