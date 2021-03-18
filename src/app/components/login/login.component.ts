@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import 
+import { MyserviceService } from 'src/app/services/myservice.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import
 export class LoginComponent implements OnInit {
   msg!:string;
 
-  constructor() { }
+  constructor(private service:MyserviceService, private routes:Router) { }
 
   ngOnInit(): void {
   }
