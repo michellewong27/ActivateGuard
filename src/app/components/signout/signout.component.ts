@@ -10,6 +10,7 @@ export class SignoutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    localStorage.removeItem('username')
   }
 
 }
